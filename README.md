@@ -4,7 +4,7 @@ Provide to `http.Client{Transport: handlertransport.New(my.HelloHandler)}` to ca
 
 
 
-	Provided to http.Client, But won't call a remote service.
+Here is an example, this can be used with http client library like https://github.com/machinebox/graphql to test a graphql handler.
 ```go
 	hf := func(w http.ResponseWriter, r *http.Request) {
 	    w.Write([]byte("Hello world"))
